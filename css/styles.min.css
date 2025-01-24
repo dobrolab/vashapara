@@ -1,6 +1,6 @@
 @font-face {
   font-family: kharkivregular;
-  src: url(/css/fonts/kharkiv.woff2) format("woff2"),url(/css/fonts/kharkiv.woff) format("woff");
+  src: url(css/fonts/kharkiv.woff2) format("woff2"),url(css/fonts/kharkiv.woff) format("woff");
   font-weight: 400;
   font-style: normal
 }
