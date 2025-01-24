@@ -1,0 +1,81 @@
+
+/* steps */
+
+#steps
+	.steps_wrapper
+		background-color: $c0
+		border-top: 1px solid #777
+		padding-top: 10px
+		padding-bottom: 10px
+		border-bottom: 1px solid #777
+
+	.step_item
+		display: flex
+		align-items: center
+		padding-top: 20px
+		padding-bottom: 20px
+		.step_title
+			font-family: $f1
+			font-size: 48px
+			width: 50%
+			span
+				width: 100px
+				display: inline-block
+				font-family: $f1
+				color: #777
+		.step_text
+			width: 50%
+
+/* steps ADAPTIVE */
+
+/* // XXL */
+@media (max-width: 1679px)
+	#steps
+		//
+
+/* // XL */
+@media (max-width: 1439px) 
+	#steps
+		//
+
+/* // LG */
+@media (max-width: 1199px)
+	#steps
+		.step_item
+			.step_title
+				font-size: 30px
+				span
+					width: 50px
+/* // MD */
+@media (max-width: 991px) 
+	#steps
+		.step_item
+			align-items: center
+			padding-top: 20px
+			padding-bottom: 20px
+			flex-wrap: wrap
+			.step_title
+				font-size: 30px
+				width: 100%
+				margin-bottom: 15px
+				span
+					width: 50px
+					display: inline-block
+					color: #777
+			.step_text
+				width: 100%
+
+
+/* // SM */
+@media (max-width: 767px)
+	#steps
+		//
+
+/* // XS */
+@media (max-width: 575px) 
+	#steps
+		//
+
+
+/* steps: end */
+

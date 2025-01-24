@@ -1,0 +1,422 @@
+
+/* MainCallBack */
+.main__callback
+	max-width: 330px
+	width: 100%
+	padding: 28px 24px 28px
+	background: #f4f4f4
+	border-radius: 8px
+	position: relative
+	.main__callback-title
+		line-height: 28px
+		margin-bottom: 8px
+		font-size: 20px
+		text-align: center
+		text-transform: uppercase
+
+	#callbackform
+		padding: 0
+		border: 0px
+		border-bottom: 1px solid #DADADA
+		border-radius: 0
+
+		.form__content
+			flex-direction: column
+			label p
+				color: #7F808A
+				font-weight: 400
+				font-size: 16px
+				line-height: 22px
+		.form__input
+			background-color: #F4F4F4
+			border-radius: 4px
+			border: 1px solid #DADADA
+			color: #19191c
+			&::placeholder
+				color: #7F808A
+			&:active, &:focus
+				box-shadow: inset 0 0 0 3px #b98a6f
+		.form__text
+			color: #19191c
+		.form__btn
+			width: 100%
+			padding: 16px 50px
+			background-color: #19191c
+			&:hover
+				background-color: #b98a6f
+		.form__privacy
+			margin-top: 8px
+			text-align: center
+			position: relative
+			left: 0
+			bottom: initial
+			font-size: 12px
+			a
+				font-size: 12px
+				text-decoration: underline
+
+	.main__callback-whatsapp
+		p.form__text
+			margin-top: 20px
+			margin-bottom: 16px
+			color: #19191c
+			position: relative
+			&:before
+				position: absolute
+				display: block
+				content: ""
+				top: 10px
+				right: 0
+				width: 18px
+				height: 43px
+				background: url("data:image/svg+xml,%3Csvg width='18' height='53' viewBox='0 0 18 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.319 15.181L15.825 15.2582L16.319 15.181ZM0.827886 51.0838C0.774237 51.3547 0.950338 51.6178 1.22122 51.6715L5.63547 52.5457C5.90636 52.5994 6.16944 52.4233 6.22309 52.1524C6.27674 51.8815 6.10064 51.6184 5.82976 51.5648L1.90597 50.7877L2.6831 46.8639C2.73675 46.593 2.56065 46.3299 2.28977 46.2763C2.01889 46.2226 1.7558 46.3987 1.70215 46.6696L0.827886 51.0838ZM6.31847 0.681152C6.17143 1.15904 6.17116 1.15896 6.17092 1.15889C6.17088 1.15887 6.17068 1.15881 6.1706 1.15879C6.17045 1.15874 6.17041 1.15873 6.1705 1.15876C6.17068 1.15881 6.17134 1.15902 6.17249 1.15938C6.17477 1.16011 6.17897 1.16146 6.18503 1.16346C6.19714 1.16747 6.21669 1.17406 6.24324 1.18347C6.29634 1.20227 6.3774 1.23229 6.48296 1.2752C6.69412 1.36104 7.003 1.49832 7.38196 1.70044C8.14 2.10472 9.17696 2.76759 10.2732 3.79578C12.4596 5.84642 14.9047 9.37102 15.825 15.2582L16.813 15.1038C15.8574 8.991 13.3022 5.26568 10.9573 3.06639C9.78795 1.96962 8.67651 1.25752 7.85255 0.818082C7.44052 0.59833 7.10001 0.446565 6.85953 0.348812C6.73926 0.299926 6.64394 0.264519 6.57711 0.240848C6.54369 0.229012 6.51739 0.220107 6.49865 0.213916C6.48927 0.21082 6.48179 0.208403 6.47625 0.206636C6.47348 0.205753 6.4712 0.205033 6.4694 0.204472C6.46851 0.204191 6.46774 0.20395 6.46709 0.203749C6.46676 0.203648 6.46637 0.203527 6.46621 0.203476C6.46585 0.203365 6.46552 0.203263 6.31847 0.681152ZM15.825 15.2582C17.6374 26.8523 13.9401 35.7247 9.78553 41.7083C7.70679 44.7022 5.51424 46.9712 3.8425 48.4907C3.00692 49.2501 2.30237 49.8215 1.80852 50.2018C1.56163 50.392 1.3675 50.5343 1.2361 50.6283C1.1704 50.6754 1.1204 50.7104 1.08734 50.7332C1.0708 50.7447 1.05851 50.7531 1.05061 50.7585C1.04665 50.7611 1.0438 50.7631 1.04207 50.7642C1.0412 50.7648 1.04061 50.7652 1.0403 50.7654C1.04015 50.7655 1.04013 50.7655 1.04005 50.7656C1.04011 50.7656 1.04023 50.7655 1.31836 51.181C1.59649 51.5965 1.59675 51.5963 1.59709 51.5961C1.5973 51.596 1.59771 51.5957 1.59812 51.5954C1.59895 51.5948 1.60006 51.5941 1.60145 51.5932C1.60424 51.5913 1.60814 51.5886 1.61315 51.5852C1.62318 51.5784 1.63761 51.5685 1.6563 51.5556C1.69368 51.5297 1.74809 51.4917 1.81827 51.4414C1.95862 51.3409 2.1621 51.1917 2.41866 50.9941C2.9317 50.599 3.65736 50.0103 4.5151 49.2307C6.22995 47.672 8.47634 45.3473 10.6069 42.2787C14.871 36.1374 18.6741 27.0097 16.813 15.1038L15.825 15.2582Z' fill='%2319191C'/%3E%3C/svg%3E%0A") no-repeat scroll center center / contain
+
+	.after-send
+		text-align: center
+		.form__title
+			color: #19191c
+		.form__text
+			color: #19191c
+		.check
+			margin: 0 auto
+			transform: scale(0.7)
+
+@media (max-width: 1025px)
+	.main__callback
+		display: none
+
+
+/* SM */
+@media (max-width: 770px)
+	.main__wrapper
+		font-size: 30px
+		line-height: 36px
+
+#mainoffers
+	background-color: #19191C
+	color: #fff
+	padding-top: 56px
+	padding-bottom: 56px
+
+	.mainoffers_wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		gap: 12px
+
+	.mainoffers_item
+		position: relative
+		width: 15%
+		height: 208px
+		background-color: #222225
+		border-radius: 8px
+		padding: 24px 32px
+		.mainoffers_h4
+			font-family: 'NunitoSans'
+			font-style: normal
+			font-weight: 700
+			font-size: 24px
+			line-height: 30px
+			color: #fff
+			text-transform: uppercase
+			margin-bottom: 12px
+		.mainoffers_text
+			color: #999AA4
+		.mainoffers_number
+			color: #7F808A
+			position: absolute
+			bottom: 16px
+			right: 20px
+
+
+/* LG */
+@media (max-width: 1280px)
+	#mainoffers
+		.mainoffers_item
+			width: calc(33% - 8px)
+	
+/* SM */
+@media (max-width: 770px)
+	#mainoffers
+		.mainoffers_item
+			padding: 16px 24px
+			width: calc(50% - 8px)
+			.mainoffers_h4
+				font-size: 18px
+
+
+
+/* Annual Report */
+.annualreport
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background: #19191c
+	z-index: 100
+	opacity: 0
+	visibility: hidden
+	right: -100%
+	transition: .3s
+	overflow-y: auto
+
+	&.active
+		opacity: 1
+		visibility: visible
+		right: 0
+
+		.annualreport_close
+			cursor: pointer
+			position: fixed
+			z-index: 200
+			right: 0
+			height: 80px
+			width: 80px
+			display: flex
+			justify-content: center
+			align-items: center
+			border-left: 0px solid #6c6c6c
+			padding: 0 24px
+			background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='80' height='80' fill='%2319191C'/%3E%3Cline x1='51.8598' y1='50.5669' x2='30.6466' y2='29.3537' stroke='%237F808A'/%3E%3Cline x1='30.6469' y1='49.8598' x2='51.8601' y2='28.6466' stroke='%237F808A'/%3E%3C/svg%3E%0A")
+		.annualreport__wrapper
+			height: 100%
+			color: #fff
+			display: flex
+			justify-content: center
+			align-items: center
+			#annualreportform
+				border: 1px solid #3F3D3E
+				border-radius: 24px
+				padding: 80px 109px
+				margin: 15px
+				.h5
+					font-style: normal
+					font-weight: 400
+					font-size: 32px
+					color: #fff
+					text-transform: uppercase
+					text-align: center
+					margin-bottom: 16px
+				p.annualreport_text
+					color: #7F808A
+					text-align: center
+					font-size: 16px
+					margin-bottom: 40px
+
+				.form__content
+					flex-direction: column
+
+					label
+						max-width: 100%
+
+					.form__inner-btn, .form__btn
+						width: 100%
+				.annualreport__privacy
+					text-align: center
+					font-size: 16px
+					color: #7F808A
+					width: 90%
+					a
+						text-decoration: underline
+
+@media (max-width: 770px)
+	.annualreport.active
+		.annualreport__wrapper
+			#annualreportform
+				padding: 30px 20px
+				.h5
+					font-size: 20px
+					line-height: 26px
+				.form__inner-btn
+					margin-bottom: 0px
+				.annualreport__privacy
+					font-size: 14px
+					&.a
+						font-size: 14px
+/* / Annual Report */
+
+
+/* Partnership */
+#partnership
+	background-color: #3F3D3E
+	color: #fff
+
+	.btn.white-btn
+		margin-top: 40px
+		background: #fff
+		border-radius: 60px
+		font-weight: 600
+		text-align: center
+		line-height: 20px
+		padding: 18px 32px
+		letter-spacing: .02em
+		text-transform: uppercase
+		display: block
+		width: 264px
+		color: #19191C
+		&:hover
+			outline: none
+			background-color: #3F3D3E
+			color: #fff
+			box-shadow: 0 0 0 1px #fff
+		&:focus
+			outline: none
+			border: none
+			&::after
+				border: none
+		&:active
+			transition: none
+			outline: 5px solid #fff3
+
+
+	.partnership_wrapper
+		display: flex
+		gap: 40px
+		position: relative
+
+	.partnership_inner
+		width: 40%
+		padding-top: 80px
+		padding-bottom: 40px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+
+		.partnership__title
+			color: #fff
+			margin-bottom: 20px
+		p
+			color: #fff
+			font-size: 18px
+	
+		.partnership_logo
+			margin-top: auto
+			img
+				max-width: 170px
+
+	.partnership_img
+		height: 600px
+		img
+			max-width: 100%
+			height: 100%
+			object-fit: cover
+
+@media (max-width: 770px)
+	#partnership
+		.partnership_wrapper
+			flex-direction: column
+		.partnership_inner
+			padding-top: 56px
+			.partnership_logo
+				margin-top: 8px
+		.partnership_img
+			margin-left: -20px
+			margin-right: -20px
+			height: 400px
+			img
+				width: 100vw
+/* /Partnership */
+
+/* investscheme */
+#investscheme
+	background-color: #f4f4f4
+	.container
+		padding-top: 50px
+		padding-bottom: 50px
+	.investscheme_wrapper
+		padding: 60px 70px
+		background-color: #fff
+		border-radius: 8px
+		display: flex
+		justify-content: space-between
+		.investscheme_text
+			width: 65%
+			display: flex
+			flex-direction: column
+			h2
+				margin-bottom: 70px
+
+			.investscheme_cards
+				margin-top: auto
+				display: flex
+				border-radius: 8px
+				border: 1px solid #DADADA
+			.investscheme_card
+				padding: 20px 17px
+				border-right: 1px solid #DADADA
+				width: 33.33%
+				&:last-child
+					border-right: none
+				img
+					display: block
+					margin-bottom: 22px
+
+		.investscheme_form
+			width: 25%
+
+		.form__content
+			flex-direction: column
+			label
+				width: 100%
+				input
+					margin-top: 6px
+					background-color: #fff
+					color: #19191c
+					border: 1px solid #DADADA
+					&::placeholder
+						color: #7F808A
+			.form__inner-btn
+				width: 100%
+				button
+					width: 100%
+				.form__btn
+					padding: 16px 20px
+			form
+				width: 100%
+			.form__inner-btn
+				position: relative
+			.form__privacy
+				color: #7F808A
+				position: relative
+				left: initial
+				bottom: initial
+				margin-top: 10px
+				text-align: center
+
+	.form__body .after-send
+		.form__title
+			color: #19191c
+		p.form__text
+			color: #19191c
+		.check
+			margin-left: auto
+			margin-right: auto
+
+@media (max-width: 990px)
+	#investscheme
+		.investscheme_wrapper
+			flex-direction: column
+			padding: 30px 20px
+			.investscheme_text
+				width: 100%
+			.investscheme_form
+				margin-top: 50px
+				width: 100%
+
+@media (max-width: 500px)
+	#investscheme .investscheme_wrapper
+		.investscheme_text
+			h2
+				margin-bottom: 24px
+			.investscheme_cards
+				flex-direction: column
+				.investscheme_card
+					width: 100%
+					border-right: none
+					border-bottom: 1px solid #DADADA
+					&:last-child
+						border-bottom: none
+
+	/* investscheme */
+

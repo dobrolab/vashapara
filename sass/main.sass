@@ -1,0 +1,145 @@
+@font-face
+	font-family: 'kharkivregular'
+	src: url('/css/fonts/kharkiv.woff2') format('woff2'), url('/css/fonts/kharkiv.woff') format('woff')
+	font-weight: normal
+	font-style: normal
+	
+$c0: #000000
+$c1: #ffffff
+$c2: #3f3d3e
+$f0: 'Nunito Sans', sans-serif
+$f1: 'kharkivregular', sans-serif
+
+*
+	transition: all .3s ease-in-out
+
+html
+	scroll-behavior: smooth !important
+
+body
+	color: $c1
+	background: $c0
+	min-width: 360px
+	line-height: 150%
+	font-family: $f0
+
+	h1
+		color: $c1
+
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+		font-family: $f1
+
+	h2
+		font-size: 60px
+		text-align: center
+		margin-bottom: 50px
+		margin-top: 100px
+		text-transform: uppercase
+	h3
+		font-size: 50px
+
+	.btn
+		border-radius: 0
+		padding: 25px 60px
+		font-family: $f1
+		text-transform: uppercase
+	
+	.btn__more
+		font-family: $f1
+		span
+			
+
+	.btn_light_outline
+		color: $c1
+		padding: 25px 60px
+		border-radius: 5
+		border: 1px solid $c1
+		&:hover
+			color: $c1
+			border: 1px solid $c1
+			background-color: #222
+		&.main__btn:active
+			color: $c1
+			border: 1px solid $c1
+			background-color: #333
+
+
+	.content
+		background: #020205 url('/img/pattern.svg') repeat fixed top center
+
+.container
+	max-width: 1530px
+
+@media (max-width: 1920px)
+	.container
+		max-width: 1530px
+
+@media (max-width: 1530px)
+	.container
+		max-width: 1140px
+
+@media (max-width: 1140px)
+	.container
+		max-width: 767px
+
+@media (max-width: 767px)
+	.container
+		max-width: 360px
+
+
+//@import _#header
+@import _#promo
+@import _services
+@import _cases
+@import _steps
+@import _about
+@import _form
+//@import ../blocks/#header/navmobile
+//@import ../blocks/pagetitle/pagetitle
+
+@import _#footer
+
+/* // XXL */
+@media (max-width: 1679px)
+	body
+		//
+
+/* // XL */
+@media (max-width: 1439px) 
+	body
+		//
+
+/* // LG */
+@media (max-width: 1199px)
+	body
+		h2
+			font-size: 44px
+		h3
+			font-size: 34px
+
+
+/* // MD */
+@media (max-width: 991px) 
+	body
+		h2
+			font-size: 38px
+			text-align: center
+			margin-bottom: 25px
+			margin-top: 60px
+		h3
+			font-size: 28px
+
+
+/* // SM */
+@media (max-width: 767px)
+	body
+		//
+
+/* // XS */
+@media (max-width: 575px) 
+	body
+		//
+
+
+/* mainoffers: end */
+

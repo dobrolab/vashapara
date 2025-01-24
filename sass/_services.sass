@@ -1,0 +1,102 @@
+
+/* mainoffers */
+
+
+
+#mainoffers
+	transition: all .3s ease
+	.mainoffers_wrapper
+		background-color: #050505
+	.mainoffers_item
+		background-color: #030303
+		margin-bottom: 5px
+		box-shadow: 0 0 20px $c0
+		img
+			filter: grayscale(1)
+		&:hover
+			img
+				filter: grayscale(0)
+		.btn__more
+			font-family: $f1
+			color: #e5e5e5
+			span
+				display: inline-block
+				background-image: url("data:image/svg+xml,%3Csvg fill='none' height='10' viewBox='0 0 17 10' width='17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m1 9 7.5-8 7.5 8' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+				background-repeat: no-repeat
+				background-size: contain
+				width: 10px
+				height: 8px
+				transform: scaleY(1)
+			&.collapsed span
+				transform: scaleY(-1)
+			&:active
+				border-color: transparent
+
+	.mainoffers_item_table
+		.collapsing
+			height: 0
+			overflow: hidden
+			transition: height .5s ease-in-out
+		.accordion-collapse
+			box-shadow: inset 0 40px 30px -40px #000, inset 0 -40px 30px -40px #000
+			background-color: #070707
+			margin-left: -10px
+			margin-right: -10px
+		.accordion-body
+			padding: 60px 45px
+
+		.table
+			tr
+				td
+					font-family: $f1
+					background-color: transparent
+					text-align: center
+					&:first-child
+						text-align: left
+
+/* mainoffers ADAPTIVE */
+
+/* // XXL */
+@media (max-width: 1679px)
+	#mainoffers
+		//
+
+/* // XL */
+@media (max-width: 1439px) 
+	#mainoffers
+		//
+
+/* // LG */
+@media (max-width: 1199px)
+	#mainoffers
+		.mainoffers_item
+			p
+				font-size: 12px
+		.img-fluid
+			object-fit: cover
+			height: 100%
+		.btn
+			padding: 20px 30px
+
+/* // MD */
+@media (max-width: 991px) 
+	#mainoffers
+		.mainoffers_item .row .d-flex
+			flex-direction: column
+		.mainoffers_item_table
+			.accordion-body
+				padding: 30px 20px
+
+/* // SM */
+@media (max-width: 767px)
+	#mainoffers
+		//
+
+/* // XS */
+@media (max-width: 575px) 
+	#mainoffers
+		//
+
+
+/* mainoffers: end */
+
